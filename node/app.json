@@ -1,0 +1,36 @@
+{
+  "name": "fxdaemon",
+  "displayName": "FXDaemon",
+  "version": "1.0.0",
+  "rootName": "node",
+  "logger": {
+    "appenders": {
+      "symtem": { "type": "stdout" }
+    },
+    "categories": {
+      "default": { "appenders": ["symtem"], "level": "all" }
+    }
+  },
+  "addons": {
+    "deployPath": "libs",
+    "includes": ["forexapi"],
+    "forexapi": {
+      "module": "forexapi.node",
+      "win32": "../addons/forexapi/dist/win32",
+      "linux": "../addons/forexapi/dist/linux",
+      "symLinks": [
+        ["libForexConnect.so", "libForexConnect.so.1.6.5"],
+        ["libfxmsg.so", "libfxmsg.so.1.6.5"],
+        ["libfxtp.so", "libfxtp.so.1.6.5"],
+        ["libgsexpat.so", "libgsexpat.so.1.6.5"],
+        ["libgstool3.so", "libgstool3.so.1.6.5"],
+        ["libhttplib.so", "libhttplib.so.1.6.5"],
+        ["liblog4cplus.so.4", "liblog4cplus.so.1.0"],
+        ["liblog4cplus.so", "liblog4cplus.so.4"],
+        ["libpdas.so", "libpdas.so.1.6.5"],
+        ["libpricehistorymgr.so", "libpricehistorymgr.so.2.8.0"],
+        ["libquotesmgr2.so", "libquotesmgr2.so.2.8"]
+      ]
+    }
+  }
+}

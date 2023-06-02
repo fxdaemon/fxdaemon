@@ -1,0 +1,11 @@
+{
+  "name": "forex-api",
+  "version": "1.0.0",
+  "description": "ForexConnect API Addon",
+  "author": "fxdaemon.com",
+  "license": "Apache-2.0",
+  "gypfile": true,
+  "dependencies": {
+    "node-addon-api": "^6.1.0"
+  }
+}

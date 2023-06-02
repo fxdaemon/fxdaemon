@@ -1,0 +1,34 @@
+{
+  "name": "fxdaemon",
+  "pkg": {
+    "assets": [],
+    "targets": [
+      "node16-linux-x64"
+    ],
+    "scripts": [
+      "node_modules/pg/lib/index.js"
+    ],
+    "outputPath": "build/linux"
+  },
+  "targets": [
+    "win32",
+    "linux"
+  ],
+  "win32": {
+    "assets": "**/*",
+    "targets": [
+      "node16-win-x64"
+    ],
+    "outputPath": "build/win"
+  },
+  "linux": {
+    "assets": "**/*",
+    "targets": [
+      "node16-linux-x64"
+    ],
+    "outputPath": "build/linux"
+  },
+  "assets": [
+    "node_modules/@fxdaemon/talibjs/dist/talib.wasm"
+  ]
+}
