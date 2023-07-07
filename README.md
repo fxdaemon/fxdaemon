@@ -13,9 +13,13 @@ Fxdaemon is an easy-to-use, lightweight and high-performance automated trading p
 
 If the source has been modified, rebuild with reference to the following.
 
+- Prerequisites
+```bash
+npm install -g pkg @vercel/ncc node-gyp
+```
+
 - forexapi
 ```bash
-npm install -g node-gyp
 cd addons\forexapi
 npm update
 node-gyp configure
